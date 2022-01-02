@@ -153,17 +153,17 @@ d3.json(last7EQ).then(function(data) {
         "#ea2c2c"
       ];
 
-      // Looping through our intervals to generate a label with a colored square for each interval.
-      for (var i = 0; i < magnitudes.length; i++) {
-        console.log(colors[i]);
-        div.innerHTML +=
-          "<i style='background: " + colors[i] + "'></i> " +
-          magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
-      }
-      return div;
-};
+// Looping through our intervals to generate a label with a colored square for each interval.
+   for (var i = 0; i < magnitudes.length; i++) {
+     console.log(colors[i]);
+     div.innerHTML +=
+       "<i style='background: " + colors[i] + "'></i> " +
+       magnitudes[i] + (magnitudes[i + 1] ? "&ndash;" + magnitudes[i + 1] + "<br>" : "+");
+  }
+   return div;
+ };
 
-legend.addTo(map);
+ legend.addTo(map);
 
     earthquakes.addTo(map);
 
